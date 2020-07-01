@@ -60,7 +60,7 @@ const Page: React.FC<{
             {order.paymentStatusDisplay} / {order.statusDisplay}
           </p>
         </div>
-        {order && "invoices" in order && order.invoices?.length && (
+        {"invoices" in order && order.invoices?.length && (
           <div className="order-details__header-menu">
             <DropdownMenu
               type="clickable"
